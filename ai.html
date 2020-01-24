@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunstmatige intelligentie</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="fonts_awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="fonts_awesome/css/all.css">
+  <link rel="shortcut icon" type="image/png" href="afb/favicon.png">
+</head>
+<body>
+  <div class="achtergrond">
+    <img src="afb/achtergrond-2.jpg" alt="header achtergrond">
+    <h1 class="front-title">Kunstmatige Intelligentie</h1>
+  </div>
+   <header id="header">
+<div class="header-logo">
+  <a href="index.html"><img id="logo" class="header-logo-img" src="afb/geoffreyhinton-logo.png" alt="logo van de pagina"></a>
+</div>
+<nav>
+<ul id="nav-menu">
+
+   <div class="menu-div">
+    <li><a href="index.html" class="menu-tabs current-page">HOME</a></li>
+   </div>
+  <div class="menu-div">
+    <li><a href="personen.html" class="menu-tabs">PERSONEN</a></li>
+  <div class="dropdown-menu">
+    <li><a href="church.html" class="menu-subtab">Alonzo Church</a></li>
+    <li><a href="shannon.html" class="menu-subtab">Claude Shannon</a></li>
+    <div class="turing-dropdown">
+      <li><a href="alanturing.html" class="menu-subtab">Alan Turing</a></li>
+    <div class="turing-info">
+      <li><a href="turingaward.html" class="menu-subtab">Turing Award</a></li>
+    </div>
+   </div>
+  </div>
+ </div>
+<div class="menu-div">
+    <li><a href="geoffrey-map.html" class="menu-tabs">GEOFFREY</a></li>
+  <div class="dropdown-menu">
+    <li><a href="geoffrey.html" class="menu-subtab">Geoffrey Hinton</a></li>
+    <li><a href="uitvindingen.html" class="menu-subtab">Uitvindingen</a></li>
+    <li><a href="ai.html" class="menu-subtab">Kunstmatige Intelligentie</a></li>
+  </div>
+</div>
+  <div class="menu-div">
+    <li><a href="overons.html" class="menu-tabs">OVER ONS</a></li>
+   <div class="dropdown-menu">
+    <li><a href="contact.html" class="menu-subtab">Contact</a></li>
+   </div>
+  </div>
+</ul>
+
+
+</nav>
+<div class="hamburger" onclick="menu_openen(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</header>
+<div id="mobiel-nav">
+ <ul id="nav-hamburger">
+     <li><a href="index.html" class="mobiel-tabs current-page">HOME</a></li>
+     <li><a href="personen.html" class="mobiel-tabs">PERSONEN</a></li>
+     <li><a href="geoffrey-map.html" class="mobiel-tabs">GEOFFREY</a></li>
+     <li><a href="overons.html" class="mobiel-tabs">OVER ONS</a></li>
+ </ul>
+</div>
+
+<div class="arrow-background" id="scrollTop"><i class="fas fa-arrow-up fa-3x"></i></div>
+
+    <main>
+      <div class="box">
+      <h1 class="titel">Wat is Kunstmatige intelligentie?</h1>
+        <p class="inhoud">
+          Kunstmatige Intelligentie is het zelf denken door computers. Mensen kunnen al zelf denken en over henzelf nadenken. Voor veel organisme is dit nog niet zo makkelijk. Computers doen precies wat ze is opgegeven. Als je tegen je telefoon zegt dat het naar een website moet gaan doet het dit.
+          Vroeger was het zelf kunnen denken van computers is nog erg lastig. Doorbreken in de afgelopen jaren hebben ervoor gezorgd dat dit makkelijker is geworden.
+          Er zijn heel veel verschillende vormen van kunstmatige intelligentie een paar voorbeelden hiervan zijn: <a href="https://nl.wikipedia.org/wiki/Deep_learning">Deeplearning</a>, <a href="https://nl.wikipedia.org/wiki/Neuraal_netwerk">neurale netwerken</a> en <a href="https://nl.wikipedia.org/wiki/Perceptron">perceptrons</a>.
+          Hieronder wordt in het kort uitgelegd wat Kunstmatige Intelligentie is.
+        </p>
+      </div>
+        <div class="yt-filmpje">
+          <iframe class="ai-filmpje" width="560" src="https://www.youtube.com/embed/QJE_ycgR8E8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen;" allowfullscreen></iframe>
+          <p>Filmpje Kunstmatige Intelligentie</p>
+        </div>
+
+      <div class="box">
+        <h1 class="titel">Probeer wat online Kunstmatige intelligentie!</h1>
+      <div class="inhoud">
+        <a href="https://magenta.tensorflow.org/demos/performance_rnn/index.html#2%7C2,0,1,0,1,1,0,1,0,1,0,1%7C1,1,1,1,1,1,1,1,1,1,1,1%7C1,1,1,1,1,1,1,1,1,1,1,1%7Cfalse">Zelf spelende Piano</a>
+        <a href="https://storage.googleapis.com/tfjs-examples/webcam-transfer-learning/dist/index.html">Pac-man met foto's (camera nodig)</a>
+      </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="content-footer">
+       <div class="content-info">
+        <div class="footer-info">
+          <h1>INFO</h1>
+          <a href="personen.html">Personen</a>
+          <a href="bronnen.html">Bronnen</a>
+          <a href="sitemap.html">Site map</a>
+        </div>
+        <div class="overons-info">
+          <h1>WIE ZIJN WIJ</h1>
+          <a href="contact.html">Contact</a>
+          <a href="overons.html">Over ons</a>
+        </div>
+       </div>
+        <div class="site-maker">
+          <div class="line">
+          </div>
+          <p>Gemaakt door Noah v/d Oudenhoven en Joost Springvloed V4</p>
+        </div>
+      </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

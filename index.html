@@ -1,0 +1,131 @@
+<!--
+  Door Noah van den Oudenhoven en Joost Springvloed V4
+  Datum gemaakt: 18-12-2019
+  Datum af: 20-12-2019
+  Gehoopt cijfer: 9,5
+  Aantal regels: 1456
+-->
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="shortcut icon" type="image/png" href="afb/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts_awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="fonts_awesome/css/all.css">
+  </head>
+  <body>
+  <div class="achtergrond">
+    <img src="afb/achtergrond.png" alt="header achtergrond">
+    <h1 class="front-title">Welkom op de website</h1>
+    <a href="#main" class="front-knop">Klik hier!</a>
+  </div>
+   <header id="header">
+   <div class="header-logo">
+     <a href="index.html"><img id="logo" class="header-logo-img" src="afb/geoffreyhinton-logo.png" alt="logo van de pagina"></a>
+   </div>
+ <nav>
+   <ul id="nav-menu">
+
+      <div class="menu-div">
+       <li><a href="index.html" class="menu-tabs current-page"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; HOME</a></li>
+      </div>
+     <div class="menu-div">
+       <li><a href="personen.html" class="menu-tabs"><i class="fas fa-users"></i>&nbsp; PERSONEN</a></li>
+     <div class="dropdown-menu">
+       <li><a href="church.html" class="menu-subtab">Alonzo Church</a></li>
+       <li><a href="shannon.html" class="menu-subtab">Claude Shannon</a></li>
+       <div class="turing-dropdown">
+         <li><a href="alanturing.html" class="menu-subtab">Alan Turing</a></li>
+       <div class="turing-info">
+         <li><a href="turingaward.html" class="menu-subtab">Turing Award</a></li>
+       </div>
+      </div>
+     </div>
+    </div>
+   <div class="menu-div">
+       <li><a href="geoffrey-map.html" class="menu-tabs"><i class="fas fa-user"></i>&nbsp; GEOFFREY</a></li>
+     <div class="dropdown-menu">
+       <li><a href="geoffrey.html" class="menu-subtab">Geoffrey Hinton</a></li>
+       <li><a href="uitvindingen.html" class="menu-subtab">Uitvindingen</a></li>
+       <li><a href="ai.html" class="menu-subtab">Kunstmatige Intelligentie</a></li>
+     </div>
+   </div>
+     <div class="menu-div">
+       <li><a href="overons.html" class="menu-tabs"><i class="fas fa-address-card"></i>&nbsp; OVER ONS</a></li>
+      <div class="dropdown-menu">
+       <li><a href="contact.html" class="menu-subtab">Contact</a></li>
+      </div>
+     </div>
+   </ul>
+
+
+ </nav>
+ <div class="hamburger" onclick="menu_openen(this)">
+   <div class="bar1"></div>
+   <div class="bar2"></div>
+   <div class="bar3"></div>
+ </div>
+</header>
+<div id="mobiel-nav">
+ <ul id="nav-hamburger">
+     <li><a href="index.html" class="mobiel-tabs current-page">HOME</a></li>
+     <li><a href="personen.html" class="mobiel-tabs">PERSONEN</a></li>
+     <li><a href="geoffrey-map.html" class="mobiel-tabs">GEOFFREY</a></li>
+     <li><a href="overons.html" class="mobiel-tabs">OVER ONS</a></li>
+ </ul>
+</div>
+
+<div class="arrow-background" id="scrollTop"><i class="fas fa-arrow-up fa-3x"></i></div>
+
+    <main id="main">
+      <div class="box">
+      <h1 class="titel" id="scroll-titel">Waar gaat deze website over?</h1>
+        <p class="inhoud">Deze website gaat vooral over Geoffrey Hinton, hij is de kern van deze website. Daarnaast kun je op deze website veel te weten komen over allerlei personen (klik <a href="personen.html">hier</a> voor een lijstje). Daarnaast willen we je meer informatie geven over Alan Turing en andere beroepdheden in de informatica.
+        </p>
+      </div>
+      <div class="box">
+        <h1 class="titel">Wat is informatica nou eigenlijk?</h1>
+        <p class="inhoud">
+          Informatica is een heel groot begrip, zo groot zelfs dat ongeveer alles op deze planeet nu wel onder de term informatica valt op een bepaalde manier. Informatica is het berekenen en toepassen van informatie. De computer kan dit heel snel, een goed voorbeeld is je rekenmachine op je telefoon.
+        </p>
+      </div>
+      <div class="box">
+        <h1 class="titel">Waarom Geoffrey Hinton?</h1>
+        <p class="inhoud">
+          Geoffrey Hinton is een van de grondleggers van Kunstmatige Intelligentie. Hij heeft een nieuwe manier bedacht om kunstmatige intelligentie te bereiken, deze manier noem je <a href="https://nl.wikipedia.org/wiki/Deep_learning">Deep learning</a>. Hiermee heeft hij ook de <a href="turingaward.html">Turing Award</a> gewonnen.
+          Deep learning combineert allerlei menselijke zintuigen in een machine, waarna de computer zelf zijn gedachtes kan berekenen. Wil je meer weten over Kunstmatige Intelligentie? Klik dan <a href="ai.html">hier</a>.
+        </p>
+      </div>
+
+    </main>
+    <footer>
+      <div class="content-footer">
+       <div class="content-info">
+        <div class="footer-info">
+          <h1>INFO</h1>
+          <a href="personen.html">Personen</a>
+          <a href="bronnen.html">Bronnen</a>
+          <a href="sitemap.html">Site map</a>
+        </div>
+        <div class="overons-info">
+          <h1>WIE ZIJN WIJ</h1>
+          <a href="contact.html">Contact</a>
+          <a href="overons.html">Over ons</a>
+        </div>
+       </div>
+        <div class="site-maker">
+          <div class="line">
+          </div>
+          <p>Gemaakt door Noah v/d Oudenhoven en Joost Springvloed V4</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+<script src="script.js"></script>
+  <script src="script.js"></script>
+</html>

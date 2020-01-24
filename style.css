@@ -1,0 +1,682 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Main css */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  overflow-x:hidden;
+}
+.achtergrond {
+  position: relative;
+  display: block;
+  width:100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 0;
+}
+.achtergrond img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #209cfa;
+  font-family: 'Roboto', sans-serif;
+}
+a:hover {
+  color: #098eed;
+}
+
+
+/* Header css */
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10vw;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+nav {
+  position: absolute;
+  top:50%;
+  right: 20px;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+
+.menu-div{
+  display: inline-block;
+  margin:  0px;
+}
+.menu-div:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 10px;
+}
+.dropdown-menu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.header-logo {
+  height: 100%;
+  position: relative;
+}
+
+.header-logo-img {
+  height: auto;
+  width: 25vw;
+  max-width: 100%;
+  min-width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 2.5vw;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+
+.header-logo-scroll {
+  height: 60%;
+  width: auto;
+  min-width: 0;
+}
+
+.menu-tabs {
+  color: white;
+  font-family: 'Fredoka One', sans-serif;
+  padding: 20px 20px;
+}
+.menu-subtab {
+  color: #111;
+  padding: 10px 10px;
+  font-family: 'Fredoka One', sans-serif;
+}
+.menu-subtab:hover {
+  color: #555;
+}
+
+.front-title {
+  color:white;
+  position: absolute;
+  top: 50%;
+  left: 10vw;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  z-index: 2;
+  font-family: 'Fredoka One', sans-serif;
+  letter-spacing: 3px;
+  font-size: 4vw;
+}
+a.front-knop {
+  position: absolute;
+  top: 60%;
+  left: 10vw;
+  color:white;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 2vw;
+  background-color: #209cfa;
+  padding: 12px 16px;
+  border-radius: 50px;
+}
+a.front-knop:hover {
+  background-color: #098eed;
+  z-index: 1;
+}
+#personen-title {
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.img img{
+  width: 80vw;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+}
+
+/* Mobiele nav */
+
+#nav-hamburger {
+  display: none;
+  margin-top: 100px;
+  opacity: 1;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  z-index: 3;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 100;
+  position: relative;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  -ms-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+  z-index: 3;
+}
+
+.change .bar2 {opacity: 0; z-index: 3;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  -ms-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+  z-index: 3;
+}
+
+#mobiel-nav {
+  display: block;
+  height: 100%;
+  width: 0px;
+  right:0;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(33,33,33);
+  position: fixed;
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+  border-left: solid 1px white;
+}
+#nav-hamburger li {
+  padding: 10px 10px;
+  margin: 5px;
+  margin-left: 30px;
+}
+.mobiel-tabs {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+/* Scroll top */
+
+.roof {
+  visibility: hidden;
+
+  z-index: 10;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+.arrow-background {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  z-index: 10;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  visibility: hidden;
+}
+.arrow-background:hover i {
+  color: #d0d0d0;
+}
+
+.arrow-background i {
+  color: white;
+}
+
+/* Form css */
+
+.form {
+  width: 100%;
+}
+.contact-form {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80%;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 4px 0px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+input[type=text]::-webkit-input-placeholder {
+  color: white;
+}
+input[type=text]::-moz-placeholder {
+  color: white;
+}
+input[type=text]:-ms-input-placeholder {
+  color: white;
+}
+input[type=text]::-ms-input-placeholder {
+  color: white;
+}
+input[type=text]::placeholder, select {
+  color: white;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 2px 0px;
+  background-color: transparent;
+  color: white;
+}
+input[type=email]::-webkit-input-placeholder {
+  color: white;
+}
+input[type=email]::-moz-placeholder {
+  color: white;
+}
+input[type=email]:-ms-input-placeholder {
+  color: white;
+}
+input[type=email]::-ms-input-placeholder {
+  color: white;
+}
+input[type=email]::placeholder, select {
+  color: white;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  margin: 10px 0px;
+}
+button, select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #209cfa;
+  color: white;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 2px 0px;
+  background-color: #209cfa;
+
+}
+button:hover {
+  background-color: #098eed;
+}
+
+.verstuurd {
+  display: none;
+  width: 80%;
+  background-color: rgba(4, 209, 8, .65);
+  border: 2px solid #04d108;
+  margin: 0 auto;
+  margin-top: 20px;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.verstuurd p {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+}
+/* Pagina css */
+
+main {
+  width:100%;
+  position: relative;
+  background-color: #222;
+}
+
+.titel {
+  margin: 25px 25px;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+.inhoud {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.inhoud a {
+  color: #209cfa;
+}
+.inhoud a:hover {
+  color: #098eed;
+}
+.kopje {
+  text-align: center;
+  margin: 15px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.kopje a {
+
+}
+.yt-filmpje {
+  width: 100vw;
+  display:block;
+}
+.yt-filmpje p{
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5px;
+}
+
+.ai-filmpje {
+  width:40vw;
+  height: calc(40vw * 0.5625);
+  display:block;
+  margin: 0 auto;
+}
+.box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0px 60px 0px;
+}
+
+/* Footer css */
+
+footer {
+  height: 30vh;
+  width: 100vw;
+  background-color: #111;
+}
+
+.content-footer {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.content-info {
+  width: 60%;
+  margin: 0px auto;
+  position: relative;
+  height:70%;
+  margin-bottom: 20px;
+}
+
+
+.footer-info {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  height: 110px;
+}
+.footer-info a{
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+.footer-info h1{
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.overons-info {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  height: 110px;
+}
+.overons-info a{
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+.overons-info h1{
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.site-maker {
+  width: 100%;
+}
+.site-maker p{
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+.line {
+  width: 50%;
+  margin: 0px auto 15px auto;
+  border-top: 2px #666 solid;
+}
+
+.content .info{
+  margin: 0 auto;
+  text-align: left;
+}
+.verwijslink a{
+  text-align: left;
+}
+
+/* Dropdown css */
+
+.info {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+}
+
+.turing-dropdown:hover .turing-info{
+  display: block;
+}
+.dropdown-info {
+  display: none;
+  position: absolute;
+  background-color: #f2f2f2;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 1;
+  top: 80%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-left: 40px;
+}
+.turing-info {
+  display: none;
+  position: absolute;
+  color: white;
+  min-width: 170px;
+  padding: 8px 16px;
+  z-index: 1;
+}
+.info:hover .dropdown-info {
+    display: block;
+}
+
+/* responsive */
+@media only screen and (max-width: 800px) {
+  header {
+    height: 12vh;
+  }
+  #nav-hamburger {
+    display: none;
+  }
+
+  #nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+  .header-logo-img {
+    height: auto;
+    width: 40%;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  header {
+    height: 12vh;
+  }
+
+  footer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .content-info {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .overons-info {
+    display: block;
+    position: relative;
+    text-align: center;
+    -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    right:0;
+    margin-bottom: 20px;
+  }
+  .footer-info {
+    display: block;
+    position: relative;
+    text-align: center;
+    -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    left:0;
+    margin-bottom: 20px;
+  }
+  .site-maker {
+    padding-bottom: 30px;
+  }
+
+  a.front-knop {
+    font-size: 15px;
+  }
+  .front-title {
+    font-size: 20px;
+  }
+
+  #nav-hamburger {
+    display: none;
+  }
+
+  #nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .inhoud {
+    width: 90%;
+  }
+  .ai-filmpje {
+    width: 80%;
+    height: auto;
+  }
+  #personen-title {
+    top: 50%;
+  }
+}
+.header-scroll {
+  position: fixed;
+  top: 0;
+  background-color: #222;
+  z-index: 3;
+  height: 7.5vh;
+  border-bottom: solid white 2px;
+}
+.header-text {
+  color: #f2f2f2;
+}
